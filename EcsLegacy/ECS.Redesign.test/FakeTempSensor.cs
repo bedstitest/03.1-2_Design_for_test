@@ -4,12 +4,12 @@ namespace ECS.Redesign
 {
     internal class FakeTempSensor : ITempSensor
     {
-        private double temp;
-        private double thr;
-        public double Temp { set { temp = value; } get { return Temp; } }
-        public double Thr { set { thr = value; } get { return Thr; } }
+        private int temp;
+        private int thr;
+        public int Temp { set { temp = value; } get { return Temp; } }
+        public int Thr { set { thr = value; } get { return Thr; } }
 
-        public double GetTemp()
+        public int GetTemp()
         {
             return temp;
         }

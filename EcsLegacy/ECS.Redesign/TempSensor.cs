@@ -6,7 +6,7 @@ namespace ECS.Redesign
     {
         private Random gen = new Random();
 
-        public double GetTemp()
+        public int GetTemp()
         {
             return gen.Next(-5, 45);
         }

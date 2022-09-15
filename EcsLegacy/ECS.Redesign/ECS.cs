@@ -5,8 +5,8 @@ namespace ECS.Redesign
     public class ECS
     {
         private int _threshold;
-        public ITempSensor _tempSensor;
-        public IHeater _heater;
+        private readonly ITempSensor _tempSensor;
+        private readonly IHeater _heater;
 
         public ECS(int thr, ITempSensor tempSensor, IHeater heater)
         {
@@ -18,7 +18,7 @@ namespace ECS.Redesign
         public void Regulate()
         {
             var t = _tempSensor.GetTemp();
-            Console.WriteLine($"Temperatur measured was {t}");
+            Console.WriteLine($"Temperature measured was {t}");
             if (t < _threshold)
                 _heater.TurnOn();
             else
