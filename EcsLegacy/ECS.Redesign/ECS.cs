@@ -5,8 +5,8 @@ namespace ECS.Redesign
     public class ECS
     {
         private int _threshold;
-        private readonly ITempSensor _tempSensor;
-        private readonly IHeater _heater;
+        public ITempSensor _tempSensor;
+        public IHeater _heater;
 
         public ECS(int thr, ITempSensor tempSensor, IHeater heater)
         {

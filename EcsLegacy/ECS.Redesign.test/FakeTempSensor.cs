@@ -1,12 +1,15 @@
-using System;
+﻿using System;
 
 namespace ECS.Redesign
 {
     internal class FakeTempSensor : ITempSensor
     {
-        public int GetTemp()
+        private double temp;
+        public double Temp { set { temp = value} }
+
+        public double GetTemp()
         {
-            return 45;
+            return temp;
         }
 
         public bool RunSelfTest()

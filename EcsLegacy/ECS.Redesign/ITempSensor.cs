@@ -1,7 +1,7 @@
 namespace ECS.Redesign {
     public interface ITempSensor
     {
-        int GetTemp();
+        double GetTemp();
         bool RunSelfTest();
     }
 }

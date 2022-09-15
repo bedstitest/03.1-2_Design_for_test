@@ -1,15 +1,17 @@
-namespace ECS.Redesign
+﻿namespace ECS.Redesign
 {
     public class FakeHeater : IHeater
     {
+        public bool heaterWasTurnOn { set; get; }
+        public bool heaterWasTurnOff { set; get; }
         public void TurnOn()
         {
-            System.Console.WriteLine("FakeHeater is on");
+            heaterWasTurnOn = true;
         }
 
         public void TurnOff()
         {
-            System.Console.WriteLine("FakeHeater is off");
+            heaterWasTurnOff = true;
         }
 
         public bool RunSelfTest()
