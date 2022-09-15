@@ -2,7 +2,7 @@ using System;
 
 namespace ECS.Redesign
 {
-    internal class FakeTempSensor
+    internal class FakeTempSensor : ITempSensor
     {
         public int GetTemp()
         {

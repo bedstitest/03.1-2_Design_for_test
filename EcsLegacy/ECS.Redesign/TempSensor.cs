@@ -2,7 +2,7 @@ using System;
 
 namespace ECS.Redesign
 {
-    internal class TempSensor
+    internal class TempSensor : ITempSensor
     {
         private Random gen = new Random();
 

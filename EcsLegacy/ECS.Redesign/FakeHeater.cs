@@ -1,6 +1,6 @@
 namespace ECS.Redesign
 {
-    public class FakeHeater
+    public class FakeHeater : IHeater
     {
         public void TurnOn()
         {
