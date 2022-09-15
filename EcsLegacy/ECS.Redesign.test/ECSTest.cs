@@ -9,7 +9,7 @@ namespace ECS.Redesign.test
         [SetUp]
         public void Setup()
         {
-            var uut = new ECS();
+            var uut = new ECS(45,);
         }
 
         [Test]
