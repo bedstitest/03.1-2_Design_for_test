@@ -20,8 +20,8 @@ namespace ECS.Redesign.test
         [Test]
         public void SetThreshold()
         {
-            uut.SetThreshold(25);
-            Assert.That(uut.GetThreshold(), Is.EqualTo(25));
+            uut.SetHeaterThreshold(25);
+            Assert.That(uut.GetHeaterThreshold(), Is.EqualTo(25));
         }
         [Test]
         public void IsHeater_on()
@@ -58,6 +58,30 @@ namespace ECS.Redesign.test
             Assert.That(FH.heaterWasTurnOn, Is.True);
             Assert.That(FH.heaterWasTurnOff, Is.False);
         }
+
+        [Test]
+        public void Regulate_LowTemp_WindowOpened()
+        {
+            
+        }
+        [Test]
+        public void Regulate_LowTemp_WindowClosed()
+        {
+
+        }
+        [Test]
+        public void Regulate_HighTemp_WindowOpened()
+        {
+
+        }
+        [Test]
+        public void Regulate_HighTemp_WindowClosed()
+        {
+
+        }
+
+
+
         //[Test]
         //public void Regulate_fake_low()
         //{
