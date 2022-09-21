@@ -6,8 +6,8 @@ namespace ECS.Redesign
     {
         private int temp;
         private int thr;
-        public int Temp { set { temp = value; } get { return Temp; } }
-        public int Thr { set { thr = value; } get { return Thr; } }
+        //public int Temp { set { temp = value; } get { return Temp; } }
+        //public int Thr { set { thr = value; } get { return Thr; } }
 
         public int GetTemp()
         {
@@ -15,6 +15,7 @@ namespace ECS.Redesign
         }
 
 
+        /*
         public bool Regulate()
         {
             temp = Temp;
@@ -25,7 +26,7 @@ namespace ECS.Redesign
             else return false;
 
         }
-
+        */
         public bool RunSelfTest()
         {
             return true;
